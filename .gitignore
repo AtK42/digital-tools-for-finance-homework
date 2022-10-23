@@ -1,4 +1,4 @@
 week3\data\
 
-*.feather
+*.parquet
 *.hdf
