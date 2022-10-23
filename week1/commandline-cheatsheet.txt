@@ -1,0 +1,39 @@
+### commands for windows ###
+
+#create dictionary temp
+mkdir temp
+
+#change wd to temp
+cd .\temp\
+
+#write hello world to file
+echo "hello world" > hello.txt
+
+#list all files and folder in parent folder
+ls .\..
+
+#get running procceses
+Get-Process
+
+#kill process 666
+Stop-Process -Id 666
+
+#write path to file
+$PATH > path.txt
+
+#find hello file in parent
+GET-CHILDITEM .\.. | SELECT-STRING "hello.txt"
+
+#find all .pngs
+dir ~ -r -include *png | measure
+
+#find location of echo command
+#according to several blogs, get-command echo or where.exe echo should work but does not on my machine
+#on ubuntu the command is:
+which echo
+
+#find text in manual of command ps
+man ps | SELECT-STRING "Select all processes"
+
+#last 20 commands
+GET-HISTORY -Count 20 > commands.txt
