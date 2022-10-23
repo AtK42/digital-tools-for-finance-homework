@@ -18,7 +18,7 @@ toc = timer()
 print("time to write df to parquet file", round(toc - tic, 5), "seconds")
 
 # write df to hdf file and show how long it took to write the file
-tic = timer()
+tic = timer() 
 df.to_hdf(joinpath(DATADIR, 'data_dump.hdf'), key = "rand_df")
 toc = timer()
 print("time to write df to hdf file", round(toc - tic, 5), "seconds")
