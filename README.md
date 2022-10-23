@@ -11,6 +11,6 @@ Sourced and compiled data from official websites of US government like FRED, CEN
 
 
 Group Members:
-Güller, Michel
-Hauser, Aaron
-Vogel, Nick
+- Güller, Michel
+- Hauser, Aaron
+- Vogel, Nick
