@@ -23,3 +23,16 @@ def binance_super_function(currency_pair, start_date):
 #test our function
 ex06 = binance_super_function("BTCUSDT", "1641723048000")
 print(ex06.json())
+
+#############################################################################################################
+#task 2
+# 
+#root url = https://api.stlouisfed.org/
+
+
+#endpoint = fred/series/observations
+
+#observation_start:
+#https://api.stlouisfed.org/fred/series/observations?series_id=UNRATE&frequency=m&observation_start=2020-01-01&api_key=abc123
+
+
