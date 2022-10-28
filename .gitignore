@@ -1,1 +1,4 @@
 week3\data\
+
+*.parquet
+*.hdf
