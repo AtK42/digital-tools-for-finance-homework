@@ -41,13 +41,13 @@ def get_FRED_data_fct(series_id_list: list, frequency, observation_start, api_ke
 
         # converting api response from json to pandas dataframe
         # see https://deallen7.medium.com/how-to-create-a-pandas-dataframe-from-an-api-endpoint-in-a-jupyter-notebook-f2561f766ca3
-        json = resp.json()
+        json_resp = resp.json()
 
         # print keys
         #print(json.keys())
 
         # convert to pd.DF
-        df = pd.DataFrame(json['observations']) # check that the key is always called 'observations'
+        df = pd.DataFrame(json_resp['observations']) # check that the key is always called 'observations'
         df = df.iloc[:, 2:]
         #print(df.head(5))
 
