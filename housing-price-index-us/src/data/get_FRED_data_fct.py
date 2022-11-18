@@ -6,11 +6,10 @@ def get_FRED_data_fct(series_id_list: list, frequency, observation_start, api_ke
     # # purchase only house price index (monthly): HPIPONM226S
     # # unemployment rate (monthly): UNRATE
     # # consumer price index (monthly): USACPIALLMINMEI
-    # # inflation rate US (monthly): T10YIEM
     # # consumer sentiment (monthly): UMCSENT
     # # producer price index construction machinery manufacturing (monthly): PCU333120333120
     # # average mortgage interest (weekly): MORTGAGE30US
-    # # personla income (monthly): PI
+    # # personal income (monthly): PI
     # # moody's seasoned aaa corporate bond yield (monthly): AAA
     # # home supply (monthly): MSACSR
 # frequency: can be 'd' for daily, 'm' for monthly, 'y' for yearly
