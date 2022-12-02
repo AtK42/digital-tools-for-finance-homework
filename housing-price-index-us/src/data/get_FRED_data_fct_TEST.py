@@ -8,8 +8,8 @@ from datetime import date
 from get_FRED_data_fct import *
 
 #test our function
-#series_id_vec = ['HPIPONM226S']
-series_id_vec = ['HPIPONM226S', 'UNRATE', 'USACPIALLMINMEI', 'UMCSENT', 'PCU333120333120', 'MORTGAGE30US', 'PI', 'AAA', 'MSACSR', 'POPTHM', 'GDP', 'GNP', 'HOUST', 'LFWA64TTUSM647S', 'FIXHAI', 'USSTHPI']
+series_id_vec = ['HPIPONM226S']
+#series_id_vec = ['HPIPONM226S', 'UNRATE', 'USACPIALLMINMEI', 'UMCSENT', 'PCU333120333120', 'MORTGAGE30US', 'PI', 'AAA', 'MSACSR', 'POPTHM', 'GDP', 'GNP', 'HOUST', 'LFWA64TTUSM647S', 'FIXHAI', 'USSTHPI', 'HOSSUPUMSM673N']
 frequency = 'm'
 observation_start = '2000-01-01'
 observation_end = '2022-06-30'
