@@ -1,0 +1,15 @@
+Task desription to successfully use the Docker-container created for this research.
+
+1. Clone the branch project of the Git-Repository to your machine (https://github.com/AtK42/digital-tools-for-finance-homework.git)
+
+2. Create an environment variable called: RESEARCH_PATH (should point into the project folder), FRED_API_KEY
+
+3. Add folder structure 'data/raw' into the housing-price-index-us directory
+
+4. Download the data from FRED (https://fred.stlouisfed.org/), using the function displayed in the repository (src/data/get_FRED_data.py)
+
+5. Run the Docker image to create a container
+
+6. Import the local data doing xyz	
+
+With these steps your Docker-container is set up correctly and you can run the jupyter notebook
