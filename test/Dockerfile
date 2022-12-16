@@ -1,11 +1,11 @@
 FROM python:3.8.5
 
-COPY /requirements.txt /tmp/
+COPY . /app/
 
-RUN pip3 install --requirement /tmp/requirements.txt
+WORKDIR /app
 
-COPY . /tmp/
+RUN pip3 install -r requirements.txt
 
-CMD ["python", "./tmp/notebooks/housing-price-index-us.ipynb"]
+RUN python "./tmp/notebooks/housing-price-index-us.ipynb"
 
-RUN docker cp CONTAINER:/tmp/reports/figures/ /reports/figures
+RUN docker cp -a CONTAINER:/app/images /reports/figures
