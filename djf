@@ -1,0 +1,23 @@
+[33mcommit 117cf10e6063d60105c89dc4c7a3e3c060f1a4ee[m[33m ([m[1;36mHEAD -> [m[1;32mproject[m[33m)[m
+Author: nicvoge <nick.vogel@uzh.ch>
+Date:   Fri Dec 16 14:48:43 2022 +0100
+
+    workflow
+
+[33mcommit af26c7b0e0554b46194ca95b99d262978d7900d6[m
+Author: AtK42 <80830043+AtK42@users.noreply.github.com>
+Date:   Fri Dec 16 14:42:45 2022 +0100
+
+    Delete test directory
+
+[33mcommit 299d35a122b4f9db3271aeed6f9eb71608dafaef[m
+Author: AtK42 <aaron_7@live.de>
+Date:   Fri Dec 16 14:33:24 2022 +0100
+
+    add beamer presentation
+
+[33mcommit e220ef2fca45db36d4d9643fc60c0ab47931dad0[m
+Author: AtK42 <aaron_7@live.de>
+Date:   Fri Dec 16 14:09:57 2022 +0100
+
+    adjusted script to run with/without docker, adjusted docker file slighlty, clean up
