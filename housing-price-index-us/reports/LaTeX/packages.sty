@@ -1,0 +1,88 @@
+\usepackage[utf8]{inputenc}
+
+\usepackage[english]{babel}
+    \addto\captionsenglish{\renewcommand{\contentsname}{Table of Contents}}
+    %sets the language of the document to English and changes the name of the table of contents
+\usepackage{blindtext}
+    %can be used to insert blindtext, i.e., text that is inherintly nonesense
+    %used to check the layout even when the current section does not yet contain any text
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+    %needed for formulas
+\usepackage{relsize}
+%\usepackage[a4paper,lmargin={3cm},rmargin={3cm},tmargin={3cm},bmargin         ={3cm}]{geometry}
+    %needed to adjust the margins of the pdf file
+%\usepackage{setspace}
+ %\setstretch{1.5}
+ %\renewcommand{\baselinestretch}{1.5}
+    %adjusts the line spacing (the commented out line should do the trick but only if no other changes to the line spacing is made within the text, which usually needs to be done e.g., for the abstract)
+%\pagenumbering{roman}
+    %sets the page enumeration to roman (see             https://www.overleaf.com/learn/latex/Page_numbering)
+%\usepackage[export]{adjustbox}
+\setlength{\arrayrulewidth}{0.5mm} 
+    % makes borderlines of tables thicker
+%\setlength{\tabcolsep}{5mm}
+    % space between the text and the left/right border of its containing cell (in a table)
+%\renewcommand{\arraystretch}{1.5}
+    % height of each row is set to 1.2 relative to its default height (in a table)
+%\usepackage[dvipsnames]{xcolor}
+    % needed for re-colouring text, background, etc.
+%\usepackage{booktabs}
+    % needed for function \addlinespace
+\usepackage{comment}
+    % needed to comment out several lines at once with command \begin{comment} ... \end{comment}
+\usepackage[ddmmyyyy]{datetime}
+\renewcommand{\dateseparator}{.}
+    % needed to display the date on the title page in a specific format
+%\setlength{\headheight}{14.5pt}
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\fancyhf{}
+%\rhead{\thepage}
+%\lhead{\nouppercase\leftmark}
+    % needed to display a nice header (all 6 lines above)
+
+%\usepackage{minted} % Includes several programming languages and styles, visit --https://www.ntnu.no/wiki/display/imtsoftware/Code+in+LaTeX-- for more information and examples
+%\usepackage[numbered,framed]{matlab-prettifier}
+
+\usepackage[backend=biber,style=apa,sorting=nyt]{biblatex}
+    %"style" specifies the citation style, alternatives to the "apa" style include, e.g., "authoryear" or "authortitle"
+    %"sorting" specifies in which order the references will appear in your bibliography (n for author name, y for year and t for title), e.g., first the biliography is ordered alphabetically by author name, then, if several references with the same author name exist, it will be ordered by year and lastly if several references exist with the same author and year then the bibliography will be ordered by the title of the article/book/...
+\addbibresource{2.1_references.bib}
+    %calls the bib file which should be used
+\usepackage{csquotes}
+    %recommended to load when using biblatex
+%\DeclareFieldFormat[article]{author}{\fontspec{Arial}{#1}}
+    %changes the font of the author in the bibliography
+    %the {#1} specifies in which position the to-be-changed item is located
+\AtEveryBibitem{\clearfield{doi}}
+\AtEveryBibitem{\clearfield{url}}
+    %hides the doi and url from the bibliography, even if it is included in the bib file and the citation style actually includes the doi and/or url
+%\usepackage{latexmkrc}
+    % see https://tex.stackexchange.com/questions/12806/guidelines-for-customizing-biblatex-styles
+
+%\usepackage[toc, page]{appendix}
+    %needed for the appendix
+%\usepackage[raggedright]{titlesec}
+    %needed since otherwise the title of section 2 exceeds the text margins
+
+\usepackage{hyperref}   % Hyper-references, possible to change color
+\hypersetup{    % Color of hyper-references
+    colorlinks,
+    citecolor = black,
+    filecolor = black,
+    linkcolor = black,
+    urlcolor = black
+}
+
+%\usepackage[nogroupskip]{glossaries}
+    %the nogroupskip removes the grouping by the first letter of the abbreviation
+%\setlength{\glsdescwidth}{11cm}
+    %sets the width of the glossary
+
+\usepackage{dcolumn}
+\newcolumntype{d}[1]{D{.}{\cdot}{#1}}
+
+\usepackage[detect-all]{siunitx}
+%\usepackage[dvipsnames]{xcolor}

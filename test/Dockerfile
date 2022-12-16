@@ -1,9 +1,9 @@
-FROM jupyter/base-notebook
-#FROM python:3.8.5
-
-COPY . /app/
+#FROM jupyter/base-notebook:latest
+FROM python:3.7
 
 WORKDIR /app
+
+COPY . /app/
 
 RUN pip3 install --prefer-binary -r requirements.txt
 

@@ -1,0 +1,69 @@
+%%%%%%%%%
+%preamble
+%%%%%%%%%
+
+\documentclass[12pt]{beamer}
+% Theme choice:
+\usetheme{Frankfurt}
+% Title page details: 
+%\title{Effect of prominent Macroeconomic factors on the Housing Price Index in the United States}
+%\titlegraphic{
+%    \includegraphics[width = 0.25\textwidth]{images/UZH_logo.png}
+%}
+
+\titlegraphic{%
+  \begin{picture}(0,0)
+    \put(40,230){\makebox(0,0)[rt]{\includegraphics[width=.25\textwidth]{images/uzh_logo_e_pos.eps}}}
+  \end{picture}}
+  % use \put(40,70) to put it between authors and date
+  % use \put(40,130) to put it above the title in the middle
+
+\title[]{\texttt{Effect of prominent Macroeconomic factors on the Housing Price Index in the United States}}
+%\author{Güller~Michel \and 
+%        Hauser~Aaron \and
+%        Vogel~Nick \and
+%}
+\author[]{
+    Güller Michel \and
+    Hauser Aaron \and
+    Vogel Nick}
+\date{\today}
+
+\expandafter\def\expandafter\insertshorttitle\expandafter{%
+  \insertshorttitle\hfill%
+  \insertframenumber\,/\,\inserttotalframenumber}
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{page number in head/foot}[appendixframenumber]
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+\usepackage{packages}
+\definecolor{nicegreen}{HTML}{22DE6A}
+\definecolor{nicered}{HTML}{D50505}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%beginning of main body
+%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\maketitle
+\small
+
+%\begin{frame}
+%\frametitle{Table of Contents}
+%\tableofcontents
+%\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%actual start of exercises
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\pagenumbering{arabic} %sets page enumeration to arabic numbers
+\input{1.1_content.tex}
+%%%%%%%%%%%%%%%%%
+%end of main body
+%%%%%%%%%%%%%%%%%
+\end{document}
