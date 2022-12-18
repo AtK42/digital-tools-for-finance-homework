@@ -10,6 +10,8 @@ Task desription to successfully use the Docker-container created for this resear
 
 5. Run the Docker image to create a container
 
-6. Import the local data doing xyz	
+6. Run the command in interactive mode: "docker cd CONTAINER:/app/reports/figures/ RESEARCH_PATH/reports/figures/"
 
-With these steps your Docker-container is set up correctly and you can run the jupyter notebook
+Please note, that the Dockerfile seems faulty. Although quite some time was spent on the creation of the Dockerfile, there was always
+one error more to solve. We left the Dockerfile in the project in the way that we thought it should work.
+The underlying problem lies in the installation of the right packages, and furthermore the right version of the various packages.
